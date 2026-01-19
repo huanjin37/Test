@@ -1,15 +1,57 @@
+
 # Python
 __pycache__/
-*.pyc
-.pytest_cache/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+svelte/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
 # Allure 临时结果（重要！不要上传）
 allure-results/
 allure-report/
 
+# Virtual Environment
+venv/
+env/
+ENV/
+.env/
+.venv
+
 # IDE
 .vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
 
 # 系统文件
 .DS_Store
 Thumbs.db
+
+# 测试相关
+.pytest_cache/
+allure-report/
+allure-results/
+reports/*           # 注意：不提交报告内容，只保留目录
+screenshots/*       # 不提交截图内容，只保留目录
+test_data/*.json    # 如果你有测试数据，应该提交
+
+debug_test.py
